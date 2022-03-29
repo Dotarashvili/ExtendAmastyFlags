@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Amasty\Flags\Block\Adminhtml\Flag\Edit\Tab\Apply" type="DevAll\ExtendAmastyOrderFlags\Block\Adminhtml\Flag\Edit\Tab\Apply" />
+    <preference for="Amasty\Flags\Model\ResourceModel\Flag\Grid\Collection" type="DevAll\ExtendAmastyOrderFlags\Model\ResourceModel\Flag\Grid\Collection" />
+    <preference for="Amasty\Flags\Observer\OrderSaveAfterObserver" type="DevAll\ExtendAmastyOrderFlags\Observer\OrderSaveAfterObserver" />
+    <type name="Amasty\Flags\Controller\Adminhtml\Flag\Save">
+        <plugin disabled="false" name="devall_flagsaveplugin" sortOrder="10" type="DevAll\ExtendAmastyOrderFlags\Plugin\Save"/>
+    </type>
+</config>
